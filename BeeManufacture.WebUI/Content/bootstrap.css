@@ -6814,3 +6814,26 @@ td.visible-print {
     display: none !important;
   }
 }
+
+.table-bordered {
+    width: 100%
+}
+
+.table-bordered, th, td {
+    border: 5px solid black;
+    background-color: lightblue;
+    color: blue;
+    border-spacing: 4px;
+}
+
+th {
+    padding: 40px;
+}
+
+th {
+    text-align: center
+}
+
+td {
+    padding: 20px;
+}

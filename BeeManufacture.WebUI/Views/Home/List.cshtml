@@ -9,13 +9,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
     <title>List</title>
 </head>
 <body>
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
-    <table class="table">
+    <table  class="table-bordered">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
@@ -31,7 +34,8 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.MB_Birth)
-            </th>
+            </th>        
+            
             <th></th>
         </tr>
     
