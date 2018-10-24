@@ -1,7 +1,6 @@
 ﻿BODY {
     font-family: Cambria, Georgia, "Times New Roman";
     margin: 0;
-    color: dodgerblue;
 }
 
 DIV#header DIV.title, DIV.item H3, DIV.item H4, DIV.pager A {
@@ -77,11 +76,10 @@ DIV.pager {
 
 
 .table-bordered {
-    width:100%
+    width: 70%
 }
 
 .table-bordered, th, td {
-   
     background-color: lightblue;
     color: blue;
     border-spacing: 4px;
@@ -91,9 +89,11 @@ th {
     border: 2px solid black;
     padding: 40px;
 }
+
 th {
     text-align: center
 }
+
 td {
     border: 1px solid black;
     padding: 20px;

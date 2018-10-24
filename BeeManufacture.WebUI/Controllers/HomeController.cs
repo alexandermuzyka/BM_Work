@@ -38,5 +38,15 @@ namespace BeeManufacture.WebUI.Controllers
         {
             return View(repo.BHouses);
         }
+
+        public ViewResult List1()
+        {
+            return View(repo.BHTypes);
+        }
+
+        public ViewResult List2()
+        {
+            return View(repo.MBs);
+        }
     }
 }

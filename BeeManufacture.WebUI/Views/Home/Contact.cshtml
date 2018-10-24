@@ -1,25 +1,122 @@
 ﻿@model BeeManufacture.WebUI.Models.TotalBeeModel
-
 @{
-    ViewBag.Title = "Contact";
+    Layout = null;
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<!DOCTYPE html>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
+</head>
+<body>
+    <div>
 
-@foreach (var v in Model.BHTypes)
-{
-    <h1>@v.BHTypeId</h1>
-    <h1>@v.Name</h1>
-}
+        <table class="table-bordered">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.BHouses)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BHouses)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BHouses)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BHouses)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BHouses)
+                </th>
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model.BHouses)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BHType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MB_Kind)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MB_Birth)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.BHouseId }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.BHouseId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.BHouseId })
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.BHTypes)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BHTypes)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model.BHTypes)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuantityOnManufacture)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.BHTypeId }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.BHTypeId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.BHTypeId })
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.MBs)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model.MBs)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.MB_Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.MB_Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.MB_Id })
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+</body>
+</html>

@@ -23,3 +23,16 @@ D:\Progects\BM\BeeM\BeeManufacture.Domain\obj\Debug\BeeManufacture.Domain.csproj
 D:\Progects\BM\BeeM\BeeManufacture.Domain\obj\Debug\BeeManufacture.Domain.csproj.CopyComplete
 D:\Progects\BM\BeeM\BeeManufacture.Domain\obj\Debug\BeeManufacture.Domain.dll
 D:\Progects\BM\BeeM\BeeManufacture.Domain\obj\Debug\BeeManufacture.Domain.pdb
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\bin\Debug\BeeManufacture.Domain.dll.config
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\bin\Debug\BeeManufacture.Domain.dll
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\bin\Debug\BeeManufacture.Domain.pdb
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\bin\Debug\EntityFramework.dll
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\bin\Debug\EntityFramework.xml
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\bin\Debug\System.Web.Mvc.xml
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\obj\Debug\BeeManufacture.Domain.csprojAssemblyReference.cache
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\obj\Debug\BeeManufacture.Domain.csproj.CoreCompileInputs.cache
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\obj\Debug\BeeManufacture.Domain.csproj.CopyComplete
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\obj\Debug\BeeManufacture.Domain.dll
+D:\Progects\BM_Work\BeeM\BeeManufacture.Domain\obj\Debug\BeeManufacture.Domain.pdb

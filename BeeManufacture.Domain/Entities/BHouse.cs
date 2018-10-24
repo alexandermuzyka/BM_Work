@@ -10,6 +10,7 @@ namespace BeeManufacture.Domain.Entities
 {
     public class BHouse
     {      
+        [Key]
         public int BHouseId { get; set; }        
         public int Name { get; set; }
         public int BHType { get; set; }
