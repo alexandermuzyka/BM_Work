@@ -12,5 +12,7 @@ namespace BeeManufacture.Domain.Abstract
         IQueryable<BHType> BHTypes { get; }
         IQueryable<MB> MBs { get; }
         IQueryable<BHouse> BHouses {get;}
+
+        void SaveBHouse(BHouse bhouse);
     }
 }

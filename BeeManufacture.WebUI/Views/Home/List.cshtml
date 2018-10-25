@@ -56,7 +56,7 @@
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.BHType)
+                    @Html.DisplayFor(modelItem => item.BHType)  
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.MB_Kind)
@@ -68,9 +68,11 @@
                     @Html.DisplayFor(modelItem => item.MB_Birth)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.BHouseId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.BHouseId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.BHouseId })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Name }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Name }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Name })
+
+
                 </td>
             </tr>
         }

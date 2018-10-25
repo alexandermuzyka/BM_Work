@@ -15,5 +15,28 @@ namespace BeeManufacture.Domain.Concrete
         public IQueryable<BHType> BHTypes { get { return context.BHTypes; } }
         public IQueryable<MB> MBs { get { return context.MBs; } }
         public IQueryable<BHouse> BHouses { get { return context.BHouses; } }
+
+        public void SaveBHouse(BHouse bhouse)
+        {
+            if (bhouse.BHouseId == 0)
+            {
+                context.BHouses.Add(bhouse);
+            }
+
+            else
+            {
+                BHouse bh = context.BHouses.Find(bhouse.BHouseId);
+
+                if (bh != null)
+                {
+                    bh.Name = bhouse.Name;
+                    bh.BHType = bhouse.BHType;
+                    bh.MB_Birth = bhouse.MB_Birth;
+                    bh.MB_Kind = bhouse.MB_Kind;
+                    bh.StartDate = bhouse.StartDate;
+                }
+            }
+            context.SaveChanges();
+        }
     }
 }
