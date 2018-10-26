@@ -13,8 +13,9 @@ namespace BeeManufacture.Domain.Entities
     {
         [HiddenInput(DisplayValue = false)]
         public int BHouseId { get; set; }
-        [Required(ErrorMessage = "Please enter BeeHouse name")]
+        [Required(ErrorMessage = "Please, enter BeeHouse name")]
         public int Name { get; set; }
+        [Required(ErrorMessage = "Please, choose BHType")]
         public int BHType { get; set; }
         public int MB_Kind { get; set; }
         public DateTime StartDate { get; set; }

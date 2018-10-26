@@ -20,7 +20,7 @@ namespace BeeManufacture.Domain.Concrete
         {
             if (bhouse.BHouseId == 0)
             {
-                context.BHouses.Add(bhouse);
+                context.BHouses.Add(bhouse); 
             }
 
             else
@@ -38,5 +38,17 @@ namespace BeeManufacture.Domain.Concrete
             }
             context.SaveChanges();
         }
+
+        public BHouse DeleteBHouse(int id)
+        {
+            BHouse bh = context.BHouses.Find(id);
+            if (bh != null)
+            {
+                context.BHouses.Remove(bh);
+                context.SaveChanges();
+            }
+            return bh;
+        }
+
     }
 }

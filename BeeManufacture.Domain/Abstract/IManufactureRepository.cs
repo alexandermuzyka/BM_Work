@@ -14,5 +14,6 @@ namespace BeeManufacture.Domain.Abstract
         IQueryable<BHouse> BHouses {get;}
 
         void SaveBHouse(BHouse bhouse);
+        BHouse DeleteBHouse(int id);
     }
 }

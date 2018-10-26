@@ -49,6 +49,7 @@ namespace BeeManufacture.WebUI.Controllers
         /// <returns></returns>
         public ViewResult List()
         {
+            repo.BHouses.OrderBy(p=>p.Name);
             return View(repo.BHouses);
         }
         
@@ -66,7 +67,7 @@ namespace BeeManufacture.WebUI.Controllers
             {
                 repo.SaveBHouse(house);
                 TempData["message"] = string.Format("{0} has been saved", house.Name);
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
             else
             {
@@ -76,7 +77,18 @@ namespace BeeManufacture.WebUI.Controllers
         }
 
 
+        public ViewResult Create()
+        {
+            return View("Edit", new BHouse());
+        }
 
+        
+        public ActionResult Delete(int id)
+        {
+            BHouse bh = repo.DeleteBHouse(id);
+            if(bh != null) TempData["message"] = string.Format("{0} was deleted", bh.Name);
+            return RedirectToAction("List");
+        }
 
 
         /// <summary>
